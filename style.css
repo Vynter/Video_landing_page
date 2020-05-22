@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    min-width: 300px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.main{
+    height: 100vh;
+    /*width: 100vw;*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+.start{
+    z-index: 5;
+    position: absolute;
+    color: aliceblue;
+    
+}
+.video-contener{
+    background: darkgray url("paysage.png") center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;   
+}
+.overlay{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    background: rgba(0,0,0,0.3);
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+h2{
+    margin-bottom: 20px;
+}
+#btn{
+    border: 1px solid white;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 2rem;
+    font-size: 20px;
+    transition: all ease 0.8s;
+
+}
+#btn:hover{
+    transform: scale(1.10);
+    color: black;
+    background-color: aliceblue;
+    opacity: 0.6;
+}
+.info{
+    text-align: center;
+    padding-top: 30px;
+}
+.social a{
+
+    margin: 5px;
+    display: inline-block;
+    color: rgb(56, 56, 56);
+    padding: 50px 30px;
+    transform: translateY(0);
+    
+}
+.fa-twitter{
+    transition: all 0.6s ease;
+}
+.fa-facebook{
+    transition: all 0.6s ease;
+}
+.fa-linkedin{
+    transition: all 0.6s ease;
+}
+.fa-github{
+    transition: all 0.6s ease;
+}
+p{
+    margin: 20px;
+}
+.fa-twitter:hover{
+    color:#00ACEE;
+    transform: scale(1.5);
+    transform: translateY(-10px);
+}
+.fa-facebook:hover{
+    color:#3B5998;
+    transform: scale(1.5);
+    transform: translateY(-10px);
+}
+.fa-linkedin:hover{
+    color: #0e76A8;
+    transform: translateY(-10px);
+}
+.fa-github:hover{
+    color: #171515;
+    transform: translateY(-10px);
+}
+.info h1{
+    transition: all 0.6s ease-in-out ;
+}
+.info h1:hover{
+transform: scale(1.2);
+}
+
